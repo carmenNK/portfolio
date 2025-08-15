@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmen Ngosso</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <!-- Header -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/logo_1Light.png" src-light="./assets/logo_1Light.png" src-dark="./assets/logo_1Dark.png" alt="logo" class="icon Logo" /></a> 
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
+                <!--li class="nav-list"><a class="nav-link" href="#experience">Experience</a></li-->
+                <li class="nav-list"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-list"><a class="nav-link" href="#contact">Contact</a></li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="./assets/logo_1Light.png" src-light=" ./assets/logo_1Light.png" src-dark=" ./assets/logo_1Dark.png" alt="logo" class="icon Logo"/>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon " onclick="toggleMenu()">
+                <span class="gradient"></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li class="nav-list"><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li class="nav-list"><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li class="nav-list"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Carmen profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Carmen Ngosso
+                <div class="inner-headings ">
+                    <span class="gradient">
+                        Student <br/>
+                        UI/UX Designer <br/>
+                        Front-End Developer<br/>
+                        Your future employee <br/>
+                    </span>
+                </div>
+            </h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Lebenslauf Carmen2.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" src-light=" ./assets/linkedin.png" src-dark=" ./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon" onclick="location.href= 'https://linkedin.com/in/carmen-stephanie-ngosso-241295379'"/>
+                <img src="./assets/github.png" src-light=" ./assets/github.png" src-dark="./assets/github_dark.png" alt="My Github profile" class="icon github-icon" onclick="location.href= 'https://github.com/carmenNK'"/>
+            </div>
+        </div>
+    </section>
+     <!-- About Section -->
+     <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img src="./assets/lebenslauf photo.jpeg" alt="Profile picture" class="about-pic"/>
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="./assets/experience.png" src-light=" ./assets/experience.png" src-dark=" ./assets/experience_dark.png" alt="Experience icon" class="icon" />
+                <h3>Experience</h3>
+                <p>2+ years <br />Frontend Development</p>
+              </div>
+              <div class="details-container">
+                <img src="./assets/education.png" src-light=" ./assets/education.png" src-dark=" ./assets/education_dark.png"alt="Education icon" class="icon"/>
+                <h3>Education</h3>
+                <p>B.Sc. Bachelors Degree</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am a Medieninformatik student with a strong passion for UI/UX design. 
+                My journey has allowed me to gain a deep understanding of creating intuitive 
+                and visually appealing user interfaces, while also equipping me with a solid 
+                foundation in front-end development. Through this portfolio, I share projects
+                that blend both my technical skills and creativity to craft memorable user 
+                experiences. 
+              </p>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='./about.html'">read more...</button>
+            </div>
+          </div>
+        </div>
+       
+      <!--EXPERIENCE SLIDER-->
+    <div class="slider experience-slider" style="--width: 220px; --height: 150px; --quantity: 7;">
+        <div class="list">
+        <div class="item" style="--position: 1">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark=" ./assets/checkmark_dark.png" alt="icon" class="icon" />
+            <div><h3>HTML</h3><p>Experienced</p></div>
+            </article>
+        </div>
+        <div class="item" style="--position: 2">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark=" ./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>CSS</h3><p>Experienced</p></div>
+            </article>
+        </div>
+        <div class="item" style="--position: 3">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark=" ./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>JavaScript</h3><p>Intermediate</p></div>
+            </article>
+        </div>
+        <div class="item" style="--position: 4">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark=" ./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>Figma</h3><p>Experienced</p></div>
+            </article>
+        </div>
+        <div class="item" style="--position: 5">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark=" ./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>Java</h3><p>Experienced</p></div>
+            </article>
+        </div>
+        <div class="item" style="--position: 6">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark=" ./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>Android</h3><p>Intermediate</p></div>
+            </article>
+        </div>
+        <div class="item" style="--position: 7">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark="./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>Git</h3><p>Basic</p></div>
+            </article>
+        </div>
+         <div class="item" style="--position: 8">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark="./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>Illustrator</h3><p>Intermediate</p></div>
+            </article>
+        </div>
+         <div class="item" style="--position: 9">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark="./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>Sketch</h3><p>Basic</p></div>
+            </article>
+        </div>
+         <div class="item" style="--position: 10">
+            <article>
+            <img src="./assets/checkmark.png" src-light="./assets/checkmark.png" src-dark="./assets/checkmark_dark.png"  alt="icon" class="icon" />
+            <div><h3>Miro</h3><p>Basic</p></div>
+            </article>
+        </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" src-light=" ./assets/arrow.png" src-dark=" ./assets/arrow_dark.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+      </section>
+
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.gif" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Fit Me</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./projet1.html'">read more...</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.gif" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">MemoLive</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./projet2.html'">read more...</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.gif" alt="Project 2" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">My Portfolio</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./projet3.html'">read more...</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="Project 3" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">PflanziGreen</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./projet4.html'">read more...</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-5.gif" alt="Project 4" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">2D-Game : Ghost</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./projet5.html'">read more...</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./projet4.html'">demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" src-light=" ./assets/arrow.png" src-dark=" ./assets/arrow_dark.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+      </section>
+      <!-- Contact Section -->
+       <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" src-light=" ./assets/email.png" src-dark="./assets/email_dark.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:carmenngosso@gmail.com">carmenngosso@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" src-light=" ./assets/linkedin.png" src-dark=" ./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+       </section>
+       <!-- Footer -->
+       <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Carmen Ngosso. All Rights Reserved.</p>
+       </footer>
+   <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet MemoLive</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body id="project-page">
+    <!-- Header -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/logo_1Light.png" src-light="./assets/logo_1Light.png" src-dark="./assets/logo_1Dark.png" alt="logo" class="icon Logo" /> </a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="./assets/logo_1Light.png" src-light=" ./assets/logo_1Light.png" src-dark=" ./assets/logo_1Dark.png" alt="logo" class="icon Logo"/>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon " onclick="toggleMenu()">
+                <span class="gradient"></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li class="nav-list"><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li class="nav-list"><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li class="nav-list"><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </div>
+        </div>
+    </nav>
+     <header>
+        <video src="./assets/vr.mp4" autoplay muted loop></video>
+        <div class="section__text">
+        <h1 class="title">MemoLive</h1>
+        <p class="section__text__p1">Votre histoire, vos souvenirs</p>
+         </div>
+    </header>
+     <div class="description">
+             <!-- Project Bacground -->
+    <h2 class="experience-sub-title project-steps">Project Background</h2>
+    <p class="project_text">memoLive is an innovative digital service that allows users to relive vanished 
+                            or transformed places through personal and collective memories. This project was 
+                            designed to address the issue of memory preservation and transmission in an ever-evolving 
+                            world, while providing an immersive and interactive experience.</p>
+        <!-- Context -->
+    <h2 class="experience-sub-title project-steps">Context</h2>
+    <p class="project_text">In a world where places, buildings, and cultural spaces often disappear in favor of new 
+                            constructions, memoLive offers a way to digitally preserve these places. The goal is to 
+                            allow users to virtually recreate lost spaces based on personal or shared memories. 
+                            This service is part of the theme of death in the digital age, offering a means for memory 
+                            to endure beyond time.</p>
+        <!-- Process -->
+    <h2 class="experience-sub-title project-steps">Process</h2>
+    <p class="project_text">The development of memoLive followed a structured process, beginning with identifying user 
+                            needs and analyzing the key features. The design was carried out through several phases:</p>
+    <ol class="project_text-list">
+        <li>Identification of key features: adding memories, managing connected devices, and searching for locations.</li>
+        <li>Wireframing and prototyping: creating low and high-fidelity mockups, as well as interactive prototypes to test 
+            navigation and usability.</li>
+        <li>User testing: collecting feedback to refine design decisions and improve the interface and user experience</li>                        
+    </ol>
+        <!-- Research -->
+    <h2 class="experience-sub-title project-steps">Research</h2>
+    <p class="project_text">To ensure the service aligned with user expectations, a phase of user research was conducted, 
+                            including questionnaires and semi-structured interviews. This helped define the target audience: 
+                            adults aged 18 to 60 with an interest in technology and history. The tests revealed that the collaborative 
+                            aspect (sharing memories) and the ability to relive places were appreciated.</p>
+        <!-- Design Goals -->
+    <h2 class="experience-sub-title project-steps">Design Goals</h2>
+    <p class="project_text"> The design goals were as follows:</p>
+    <ul class="project_text-list">
+        <li>Create an intuitive and accessible interface, even for users not familiar with immersive technologies.</li>
+        <li>Provide an immersive experience that engages the five senses, including visual, auditory, and olfactory elements.</li>
+        <li>Ensure smooth navigation, allowing users to easily add, view, and share memories.</li>                     
+    </ul>
+        <!-- Design Problems -->
+    <h2 class="experience-sub-title project-steps">Design Problems</h2>
+    <p class="project_text">Several design challenges arose during the project:</p>
+    <ul class="project_text-list">
+        <li>Memory privacy: How to ensure that memories shared by users are protected, 
+            while offering an option for public sharing?</li>
+        <li>Technological accessibility: How to make the service accessible to everyone, 
+            including people who may not be comfortable with immersive technologies like connected glasses?</li>
+        <li>Interface complexity: How to design an interface that is rich in features 
+            but simple enough to avoid cognitive overload?</li>                      
+    </ul>
+        <!-- Design Decisions -->
+    <h2 class="experience-sub-title project-steps">Design Decisions</h2>
+    <p class="project_text">To address the identified challenges, several decisions were made:</p>
+    <ul class="project_text-list">
+        <li>Private and public modes: Users can choose to share their memories in private or public spaces, 
+            ensuring privacy for personal data.</li>
+        <li>Mobile and immersive versions: A simpler version accessible via smartphone was created for users 
+            who do not wish to invest in connected glasses. The immersive version offers a richer experience with 
+            olfactory and visual devices.</li>
+        <li>Graphic design: A color palette inspired by sepia photographs was chosen to enhance the nostalgic aspect, 
+            while a handwritten typography was used to create an emotional connection with users.</li>                     
+    </ul>
+        <!-- Reflections -->
+    <h2 class="experience-sub-title project-steps">Reflections</h2>
+    <p class="project_text">The memoLive project pushed the boundaries of digital design by combining memory, 
+                            technology, and sensory experiences. User testing revealed high acceptance of the 
+                            service, though adjustments are still needed to improve accessibility and simplify 
+                            certain interactions.<br> on memory privacy and the use of connected glasses was 
+                            particularly insightful. Going forward, improving the integration of immersive 
+                            technologies and expanding collaborative features will be priorities.<br> project 
+                            highlights the importance of UX design in innovative contexts, where simplicity and 
+                            intuitiveness must prevail, while offering a rich and emotionally engaging experience.</p>
+    </div>   
+<!--Projects-->
+    <div id="other_projects">
+        <p class="section__text__p3">My others projects</p>
+        <div class="experience-details-container">
+            <div class="about-containers color-container">
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-1.gif" alt="Fit Me" class="project-img" onclick="location.href='./projet1.html'"/>
+                    </div>
+                    <h3>Fit Me</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-3.gif" alt="My Portfolio" class="project-img" onclick="location.href='./projet3.html'"/>
+                    </div>
+                    <h3>My portfolio</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="PflanziGreen" class="project-img" onclick="location.href='./projet4.html'"/>
+                    </div>
+                    <h3>PflanziGreen</h3>
+                </div>
+                 <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-5.gif" alt="MemoLive" class="project-img" onclick="location.href='./projet5.html'"/>
+                    </div>
+                    <h3>Ghost</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+         <!-- Footer -->
+        <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Carmen Ngosso. All Rights Reserved.</p>
+       </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet PflanziGreen</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body id="project-page">
+    <!-- Header -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/logo_1Light.png" src-light="./assets/logo_1Light.png" src-dark="./assets/logo_1Dark.png" alt="logo" class="icon Logo" /> </a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/logo_1Light.png" src-light="./assets/logo_1Light.png" src-dark="./assets/logo_1Dark.png" alt="logo" class="icon Logo" /> </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon " onclick="toggleMenu()">
+                <span class="gradient"></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li class="nav-list"><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li class="nav-list"><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li class="nav-list"><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <video src="./assets/plants.mp4" autoplay muted loop></video>
+        <div class="section__text">
+        <h1 class="title">PflanziGreen</h1>
+        <p class="section__text__p1"> Intelligent Plant Care System</p>
+    </div>
+    </header>
+ <div class="description">
+          <!-- Project Bacground -->
+    <h2 class="experience-sub-title project-steps">Project Background</h2>
+    <p class="project_text">PflanziGreen is an intelligent system designed to help users manage and care for their
+                             plants more effectively. It combines photo-based plant recognition, personalized care 
+                             reminders, and a visual dashboard that tracks past and upcoming plant tasks — offering 
+                             users a friendly and reliable plant management tool.</p>
+        <!-- Context -->
+    <h2 class="experience-sub-title project-steps">Context</h2>
+    <p class="project_text">Plant owners often forget when they last watered or fertilized their plants, struggle to 
+                            identify unknown species, or miss early warning signs like dry leaves or poor lighting. 
+                            While existing apps (Planta, PictureThis, etc.) offer either identification or task tracking, 
+                            few provide a seamless, all-in-one solution.<br>
+                            PflanziGreen fills that gap by combining AI-powered recognition, ongoing plant care tracking, 
+                            and a personalized calendar interface.</p>
+        <!-- Process -->
+    <h2 class="experience-sub-title project-steps">Process</h2>
+    <p class="project_text"> Key Milestones:</p>
+    <ul class="project_text-list">
+        <li>Week 1: Idea brainstorming, role distribution, early concept sketches</li>
+        <li>Week 2 & 3: Wireframe development in Figma, color palette selection, typography decisions, and collaborative desktop layout design.</li>
+        <li>Week 4 & 5:  Mobile-first redesign, component structuring, design refinement based on team feedback.</li>
+        <li>Week 6:  Final submission preparation.</li>                        
+    </ul>
+    <p class="project_text">Collaboration:</p>
+    <ul class="project_text-list">
+        <li>Co-designed wireframes and UI components in Figma with the other designer</li>
+        <li>Worked closely with the front-end developer to ensure design feasibility</li>
+        <li>Shared feedback loops with back-end developers for usability input</li>                        
+    </ul>
+        <!-- Research -->
+    <h2 class="experience-sub-title project-steps">Research</h2>
+    <p class="project_text">Benchmark Analysis:<br>
+                            Apps like Planta, PictureThis, and PlantIn provide valuable features, but most specialize 
+                            in either identification or care reminders, not both.</p>
+    <p class="project_text"> Notable References:</p>
+ <ul class="project_text-list">
+        <li>PlantIn (Industry): AI-based identification + contextual care suggestions (weather-aware).</li>
+        <li>Flora Incognita (Research): Deep learning model for accurate wild plant classification.</li>                  
+    </ul>
+
+        <!-- Design Goals -->
+    <h2 class="experience-sub-title project-steps">Design Goals</h2>
+    <p class="project_text"> The design goals were as follows:</p>
+    <ul class="project_text-list">
+        <li>Deliver a clean, intuitive interface for plant care, even for novice users.</li>
+        <li>Create a central dashboard that highlights important tasks visually.</li>
+        <li>Ensure a consistent and developer-friendly component structure.</li>                     
+    </ul>
+        <!-- Design Problems -->
+    <h2 class="experience-sub-title project-steps">Design Problems</h2>
+    <ul class="project_text-list">
+        <li>Initial misunderstanding of the projects format (mobile app vs. responsive web).</li>
+        <li>Potential complexity in components that could delay development.</li>
+        <li>Lack of a design system at the start caused slower progress and inconsistencies.</li>                      
+    </ul>
+        <!-- Design Decisions -->
+    <h2 class="experience-sub-title project-steps">Design Decisions</h2>
+    <p class="project_text">To address the identified challenges, several decisions were made:</p>
+    <ul class="project_text-list">
+        <li>Shifted from mobile app to mobile-first responsive web design after project clarification.</li>
+        <li>Built modular, reusable UI components in Figma.</li>
+        <li>Established a soft, nature-inspired color palette to reflect the plant theme.</li>  
+        <li>Ensured feasibility through regular communication with the dev team.</li>                   
+    </ul>
+        <!-- Reflections -->
+    <h2 class="experience-sub-title project-steps">Reflections</h2>
+     <p class="project_text"> What I learned: </p>
+    <ul class="project_text-list">
+        <li>Designing with implementation in mind.</li>
+        <li>Communicating visual ideas clearly and adapting quickly to shifting project scopes</li>
+        <li>Managing components efficiently in Figma.</li>                        
+    </ul>
+    <p class="project_text">What I would do differently: </p>
+    <ul class="project_text-list">
+        <li>Align on target platform from the start to avoid mismatches.</li>
+        <li>Organize a kickoff workshop to define shared vision, goals, and user expectations.</li>
+        <li>Build a basic design system early for better speed and consistency.</li>  
+        <li>Involve front-end developers at the wireframe stage to ensure feasibility.</li>                      
+    </ul>
+    </div>
+    <!--Projects-->
+    <div id="other_projects">
+        <p class="section__text__p3">My others projects</p>
+        <div class="experience-details-container">
+            <div class="about-containers color-container">
+                 <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-1.gif" alt="Fit Me" class="project-img" onclick="location.href='./projet1.html'"/>
+                    </div>
+                    <h3>Fit Me</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-2.gif" alt="MemoLive" class="project-img" onclick="location.href='./projet2.html'"/>
+                    </div>
+                    <h3>MemoLive</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-3.gif" alt="My Portfolio" class="project-img" onclick="location.href='./projet3.html'"/>
+                    </div>
+                    <h3>My portfolio</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-5.gif" alt="Ghost" class="project-img" onclick="location.href='./projet5.html'"/>
+                    </div>
+                    <h3>Ghost</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- Footer -->
+       <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Carmen Ngosso. All Rights Reserved.</p>
+       </footer>
+    <script src="script.js"></script>
+</body>
+</html>

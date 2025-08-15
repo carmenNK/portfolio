@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+     <!-- Header -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/logo_1Light.png" src-light="./assets/logo_1Light.png" src-dark="./assets/logo_1Dark.png" alt="logo" class="icon Logo" /> </a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="./assets/logo_1Light.png" src-light=" ./assets/logo_1Light.png" src-dark=" ./assets/logo_1Dark.png" alt="logo" class="icon Logo"/>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon " onclick="toggleMenu()">
+                <span class="gradient"></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li class="nav-list"><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li class="nav-list"><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li class="nav-list"><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </div>
+        </div>
+    </nav>
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="">A little bit about myself.</h2>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        Hi, I’m Carmen Ngosso, a passionate UI/UX designer and front-end developer who believes in the power of design to improve lives. I’m constantly learning and exploring new ways to create intuitive and engaging user experiences. Whether it’s through my work or personal projects, I love collaborating with motivated people who are excited to share their ideas and make a difference in the world.
+                    </p>
+                </br>
+                    <p>
+                        I’m currently studying Medieninformatik, where I’m gaining both technical and creative skills that empower me to design and develop functional, user-centered products. My studies have given me a solid foundation in the principles of design, coding, and user research, which I apply to my projects.
+                    </p>
+                     </br>
+                    <p>
+                        I approach design with a big-picture mindset, focusing not only on aesthetics but also on how design can solve real user problems. From ideation to final development, I enjoy being involved in every step of the design process.
+                    </p>
+                </div>
+                <!--<div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href ='./#projects'">View My Work</button>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- My Values Section -->
+    <section id="values">
+        <div class="section-container">
+            <div class="about-details-container">
+            <h2 class="">My Values</h2>
+            <h3 class="value-title">😍 Passion is Everything</h3>
+            <div class="text-container">
+                If you're not passionate about what you're doing, it's time to change. Life is too short to spend it on things that don’t excite you. I’m lucky to be surrounded by people who are driven and love what they do. For me, every day is an opportunity to channel my energy into something meaningful.
+            </div>
+            <h3 class="value-title">🧠 Always Be Learning</h3>
+            <div class="text-container">
+                I believe in constant growth and improvement. Whether it’s learning new design tools, understanding user behavior, or experimenting with new coding techniques, I’m always looking for ways to challenge myself. I spend my free time reading design blogs, attending meetups, and trying out new projects to push my skills further.
+            </div>
+            <h3 class="value-title">🎨 Embrace Your Creativity</h3>
+            <div class="text-container">
+                Creativity is my outlet and my therapy. When I’m not designing, I enjoy exploring other creative hobbies, such as painting, playing music, and even photography. I believe everyone needs a creative outlet, whether it’s through work or personal projects. It keeps the mind sharp and the soul fulfilled.
+            </div>
+            <h3 class="value-title">🌍 Stay Humble</h3>
+            <div class="text-container">
+                No matter where you come from or what you do, treat everyone with kindness and respect. We all face challenges in life, and we are all learning and growing. For me, humility is at the core of being a good designer and a good person. Stay true to yourself, and always remember to lift others up along the way.
+            </div>
+        </div>
+        </div>
+    </section>
+       <!--Projects-->
+       
+        <p class="section__text__p3">My hobbies</p>
+      
+     <div class="slider experience-slider" reverse="true" style="
+            --width: 200px;
+            --height: 275px;
+            --quantity: 9;
+        ">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="assets/slider2_1.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="assets/slider2_2.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="assets/slider2_3.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="assets/slider2_4.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="assets/slider2_5.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="assets/slider2_6.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="assets/slider2_7.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="assets/slider2_8.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="assets/slider2_9.jpg" alt=""></div>
+            </div>
+        </div>
+         <div class="slider  experience-slider" style="
+            --width: 100px;
+            --height: 50px;
+            --quantity: 7;
+        ">
+            <div class="list">
+                <div class="item" style="--position: 1"><h3>Traveling</h3></div>
+                <div class="item" style="--position: 2"> <h3>Baking </h3></div>
+                <div class="item" style="--position: 3"><h3>Sewing</h3></div>
+                <div class="item" style="--position: 4"><h3>Sport</h3></div>
+                <div class="item" style="--position: 5"><h3>Cooking</h3></div>
+            </div>
+        </div>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Carmen Ngosso. All Rights Reserved.</p>
+       </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Fit Me</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body id="project-page">
+    <!-- Header -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/logo_1Light.png" src-light="./assets/logo_1Light.png" src-dark="./assets/logo_1Dark.png" alt="logo" class="icon Logo" /> </a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="./assets/logo_1Light.png" src-light=" ./assets/logo_1Light.png" src-dark=" ./assets/logo_1Dark.png" alt="logo" class="icon Logo"/>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon " onclick="toggleMenu()">
+                <span class="gradient"></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li class="nav-list"><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li class="nav-list"><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li class="nav-list"><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <video src="./assets/cloths.mp4" autoplay muted loop></video>
+        <div class="section__text">
+            <h1 class="title">FitMe</h1>
+            <p class="section__text__p1">Your wardrobe, simplified</p>
+        </div>
+    </header>
+    <div class="description">
+        <!-- Project Bacground -->
+    <h2 class="experience-sub-title project-steps">Project Background</h2>
+    <p class="project_text">FitMe is a conceptual mobile app that helps users manage their wardrobe 
+                            digitally and create custom outfits from their existing clothing. 
+                            The goal was to explore how digital tools can simplify everyday decisions 
+                            like “What should I wear today?” by offering a functional, personalized, 
+                            and intuitive experience.</p>
+        <!-- Context -->
+    <h2 class="experience-sub-title project-steps">Context</h2>
+    <p class="project_text">The project was part of a university Human-Computer Interaction (HCI) course 
+                            focused on usability and user-centered design. It was carried out over several
+                             weeks and included ideation, research, paper prototyping, user testing,  and 
+                             interactive prototyping using Figma.</p>
+        <!-- Process -->
+    <h2 class="experience-sub-title project-steps">Process</h2>
+    <ul class="project_text-list">
+        <li>concept and feature definition</li>
+        <li>User survey to understand needs and behaviors</li>
+        <li>Development of a paper prototype</li>
+        <li>Think-Aloud user testing</li>
+        <li>Iterative improvements based on feedback</li>
+        <li>Creation of an interactive Figma prototype</li> 
+        <li>Final testing and documentation</li>                        
+    </ul>
+        <!-- Research -->
+    <h2 class="experience-sub-title project-steps">Research</h2>
+    <p class="project_text">A questionnaire was distributed to potential users to gather insights on 
+                            their wardrobe habits and expectations for such an app.
+                            Key findings included:</p>
+    <ul class="project_text-list">
+        <li>Most had never used a similar app but showed strong interest</li>
+        <li>High demand for outfit suggestions and easy item uploads</li>
+        <li>Need for clear categorization and filtering of outfits</li>
+    </ul>
+    <p class="project_text">These insights guided design priorities and feature selection.</p>
+        <!-- Design Goals -->
+    <h2 class="experience-sub-title project-steps">Design Goals</h2>
+    <ul class="project_text-list">
+        <li>Allow users to easily add and manage clothing items</li>
+        <li>Enable intuitive outfit creation from existing wardrobe</li>
+        <li>Offer a way to save, share, and download outfits</li>
+        <li>Maintain a clean, minimalist and accessible interface</li>
+        <li>Minimize cognitive effort for first-time users</li>                       
+    </ul>
+        <!-- Design Problems -->
+    <h2 class="experience-sub-title project-steps">Design Problems</h2>
+    <ul class="project_text-list">
+        <li>The “+” icon for adding clothing was not intuitive for all users</li>
+        <li>It was unclear how to save an added item</li>
+        <li>Icons in the outfit creation interface (back vs. close) caused confusion</li>
+        <li>No visual confirmation after saving an outfit or a favorite</li>                       
+    </ul>
+        <!-- Design Decisions -->
+    <h2 class="experience-sub-title project-steps">Design Decisions</h2>
+    <ul class="project_text-list">
+        <li>Added an explicit “Save” button after adding a clothing item</li>
+        <li>Reworked the outfit creation flow for better clarity</li>
+        <li>Improved icon labeling and layout</li>
+        <li>Introduced a feedback message for successful saves</li> 
+        <li>Created an interactive Figma prototype to simulate real user interaction</li>                      
+    </ul>
+        <!-- Reflections -->
+    <h2 class="experience-sub-title project-steps">Reflections</h2>
+    <p class="project_text">The project taught me the value of early user feedback and iterative
+                             testing. Even small usability issues can block an otherwise good experience.
+                            I learned to focus not only on visual design but also on interaction clarity, 
+                            user expectations, and emotional satisfaction. In future iterations, I would 
+                            consider integrating real-time outfit suggestions based on weather and user 
+                            preferences, as well as stronger social sharing capabilities.</p>
+    </div>
+        <!--Projects-->
+    <div id="other_projects">
+        <p class="section__text__p3">My others projects</p>
+        <div class="experience-details-container">
+            <div class="about-containers color-container">
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-2.gif" alt="MemoLive" class="project-img" onclick="location.href='./projet2.html'"/>
+                    </div>
+                    <h3>MemoLive</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-3.gif" alt="My Portfolio" class="project-img" onclick="location.href='./projet3.html'"/>
+                    </div>
+                    <h3>My portfolio</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="PflanziGreen" class="project-img" onclick="location.href='./projet4.html'"/>
+                    </div>
+                    <h3>PflanziGreen</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-5.gif" alt="Ghost" class="project-img" onclick="location.href='./projet5.html'"/>
+                    </div>
+                    <h3>Ghost</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+                            
+       <!-- Footer -->
+       <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Carmen Ngosso. All Rights Reserved.</p>
+       </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body id="project-page">
+    <!-- Header -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/logo_1Light.png" src-light="./assets/logo_1Light.png" src-dark="./assets/logo_1Dark.png" alt="logo" class="icon Logo" /> </a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                <li><img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/logo_1Light.png" src-light="./assets/logo_1Light.png" src-dark="./assets/logo_1Dark.png" alt="logo" class="icon Logo" /> </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon " onclick="toggleMenu()">
+                <span class="gradient"></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li class="nav-list"><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                <li class="nav-list"><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li class="nav-list"><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png" src-light="./assets/theme_light.png"  src-dark="./assets/theme_dark.png" alt="Color theme icon"/></li>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <video src="./assets/portfolio.mp4" autoplay muted loop></video>
+        <div class="section__text">
+        <h1 class="title">My portfolio</h1>
+        <p class="section__text__p1">The goal is to create the best experiences for people</p>
+    </div>
+    </header>
+    <div class="description">
+           <!-- Project Bacground -->
+    <h2 class="experience-sub-title project-steps">Project Background</h2>
+    <p class="project_text">My portfolio is a personal showcase presenting my skills in UI/UX design, 
+                            front-end development, and my previous projects. The goal was to create a 
+                            functional, aesthetic, and intuitive website that not only presents my 
+                            projects but also my technical skills and design approach.</p>
+        <!-- Context -->
+    <h2 class="experience-sub-title project-steps">Context</h2>
+    <p class="project_text">This project was a personal initiative to create an online professional portfolio. 
+                            The focus was on building an optimized user interface with a responsive design. 
+                            The website is built using HTML, CSS, JavaScript, and employs modern front-end 
+                            development techniques.</p>
+        <!-- Process -->
+    <h2 class="experience-sub-title project-steps">Process</h2>
+    <ul class="project_text-list">
+        <li>Defining Goals: The main objective was to build an online professional portfolio.</li>
+        <li>Wireframes and Mockups: Created wireframes and mockups on Figma to establish the site’s structure.</li>
+        <li>Front-End Development: Used HTML, CSS, and JavaScript to develop the main page and individual project pages.</li>
+        <li>User Testing: Conducted usability tests to ensure smooth navigation and design consistency across various screen resolutions.</li>
+        <li>Feedback and Iterations: Continuous improvements after each user test to refine features and interface.</li>
+        <li>Mobile Optimization: The design is fully responsive, optimized for mobile and tablet devices.</li>                       
+    </ul>
+        <!-- Research -->
+    <h2 class="experience-sub-title project-steps">Research</h2>
+    <p class="project_text">As part of creating my portfolio, I conducted an in-depth study of portfolios from 
+                            established professionals online. This research helped me understand the expectations 
+                            of recruiters and my target audience. The key takeaways I gathered include:</p>
+    <ul class="project_text-list">
+        <li>Simplicity and Minimalism: Many professionals favor a simple and clean design, where the essentials are highlighted without distractions.</li>
+        <li>Clear Presentation of Projects: Each project is accompanied by a concise explanation of its context, the process followed, and the results achieved.</li>
+        <li>Personalization: Many portfolios incorporate personalized elements that reflect the creator's personality and style while remaining professional.</li>
+        <li>Accessibility and Navigation: Intuitive navigation and a responsive design are essential to ensure a good user experience across all devices.</li>
+    </ul>
+    <p class="project_text">These findings were incorporated into the design of my own portfolio to ensure it is not only aesthetic but also functional and aligned with industry expectations.</p>
+        <!-- Design Goals -->
+    <h2 class="experience-sub-title project-steps">Design Goals</h2>
+    <ul class="project_text-list">
+        <li>Create a responsive website that adapts to all screen sizes.</li>
+        <li>Present projects and skills clearly and concisely.</li>
+        <li>Optimize the user experience with smooth navigation and a simple interface.</li>
+        <li>Integrate both dark and light modes for a personalized experience.</li>
+        <li>Highlight the creator's personality and unique style through design.</li>                       
+    </ul>
+        <!-- Design Problems -->
+    <h2 class="experience-sub-title project-steps">Design Problems</h2>
+    <ul class="project_text-list">
+        <li>Finding a balance between aesthetic design and a functional interface.</li>
+        <li>Ensuring a smooth user experience despite the use of multiple technologies.</li>
+        <li>Choosing the right colors and typography to ensure readability and a professional atmosphere.</li>                       
+    </ul>
+        <!-- Design Decisions -->
+    <h2 class="experience-sub-title project-steps">Design Decisions</h2>
+    <ul class="project_text-list">
+        <li>Used a minimalist design with interactive elements to maintain focus on the projects.</li>
+        <li>Implemented a simple navigation system with a sidebar for quick access to different sections.</li>
+        <li>Integrated a dark and light theme toggle button to enhance the user experience.</li>
+        <li>IChose a modern, readable typeface to facilitate reading on all devices.</li>                      
+    </ul>
+        <!-- Reflections -->
+    <h2 class="experience-sub-title project-steps">Reflections</h2>
+    <p class="project_text">This project allowed me to apply everything I’ve learned in UI/UX design and web development. 
+                            I understood the importance of iteration in the design process and the impact of a smooth user 
+                            experience on the perception of the product. Reflecting on my own portfolio, I realized the 
+                            importance of visual coherence and simplicity in presenting information. For future versions, 
+                            I would like to explore more advanced interactive features and improve the site's accessibility.</p>
+    </div>
+<!--Projects-->
+    <div id="other_projects">
+        <p class="section__text__p3">My others projects</p>
+        <div class="experience-details-container">
+            <div class="about-containers color-container">
+                 <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-1.gif" alt="Fit Me" class="project-img" onclick="location.href='./projet1.html'"/>
+                    </div>
+                    <h3>Fit Me</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-2.gif" alt="MemoLive" class="project-img" onclick="location.href='./projet2.html'"/>
+                    </div>
+                    <h3>MemoLive</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="PflanziGreen" class="project-img" onclick="location.href='./projet4.html'"/>
+                    </div>
+                    <h3>PflanziGreen</h3>
+                </div>
+                <div class="projects-container ">
+                    <div class="article-container">
+                        <img src="./assets/project-5.gif" alt="Ghost" class="project-img" onclick="location.href='./projet5.html'"/>
+                    </div>
+                    <h3>Ghost</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- Footer -->
+       <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-list"><a class="nav-link" href="./index.html#about">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#projects">Projects</a></li>
+                    <li class="nav-list"><a class="nav-link" href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Carmen Ngosso. All Rights Reserved.</p>
+       </footer>
+    <script src="script.js"></script>
+</body>
+</html>
