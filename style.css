@@ -119,6 +119,15 @@ p {
   color: var(--secondary-color-2);
 }
 
+a {
+    color: var(--secondary-color-2);
+    text-decoration: none; 
+}
+a:hover {
+    color: var(--primary-color-1); /* une couleur légèrement différente pour le hover */
+    text-decoration: underline; /* souligner au survol si tu veux */
+}
+
 /* TRANSITION */
 
 a,

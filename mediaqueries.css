@@ -1,3 +1,36 @@
+/* Pour très grands écrans */
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px; 
+        margin: 0 auto; 
+    }
+
+    #profile {
+        height: 90vh; 
+    }
+
+    .section-container, section {
+        max-width: 1400px; 
+        margin: 0 auto; 
+    }
+
+    .about-containers {
+        justify-content: center; 
+        gap: 2rem; 
+    }
+
+    #other_projects .projects-container {
+        max-width: 300px; 
+    }
+
+    /* Optionnel : ajustement général du texte */
+    article, .section__text__p2, .title {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
